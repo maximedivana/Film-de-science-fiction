@@ -117,6 +117,49 @@ footer {
     background: #222;
     padding: 25px;
 }
+        .social-buttons {
+            position: fixed;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .social-button {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 40px;
+            height: 40px;
+            background-color: #222;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .social-button span {
+            display: none;
+            margin-left: 10px;
+        }
+
+        .social-button:hover {
+            width: 150px;
+            background-color: red;
+        }
+
+        .social-button:hover span {
+            display: inline;
+        }
+        .social-button:hover span a{
+            background: white;
+            color: black;
+        }
     </style>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -147,18 +190,27 @@ footer {
     </header>
 
     <section class="hero">
-        <h1> DERNIERS <span> FILS EN LIGNE</span></h1>
-        <p>regarder les meilleurs films et emissionsde televisions en ligne gratuitement.</p>
+        <h1> DERNIERS <span> FILMS EN LIGNE</span></h1>
+        <p>regarder les meilleurs films et emissions de televisions en ligne gratuitement.</p>
     </section>
+    <div class="social-buttons">
+        <a href="#" class="social-button">🔵<span>Tweeter</span></a>
+        <a href="social_16386015.png" class="social-button">🔵<span>Facebook</span></a>
+        <a href="#" class="social-button">🔴<span>ChatGPT</span></a>
+        <a href="#" class="social-button">🔴<span>Google</span></a>
+    </div>
 
     <section class="movies">
         <h2>FILMS EN VEDETTE</h2>
+       
+    </div>
+       
         <div class="movie-list">
             <div class="movie"></div>
             <div class="movie"></div>
             <div class="movie"></div>
             <div class="movie"></div>
-        </div>
+        
     </section>
 
     <section class="movies">
